@@ -87,7 +87,7 @@ The matplotlib package was used to plot and visualize the data.
 
 ## Results
 
-Raw data can be viewed here: [Sorting ALgorithm Data](https://docs.google.com/spreadsheets/d/1_P_d599SQPivhfgRHGJy047k4BjXuFExgHi7NDWBXsI/edit?usp=sharing)
+Raw data can be viewed here: [Sorting Algorithm Data](https://docs.google.com/spreadsheets/d/1_P_d599SQPivhfgRHGJy047k4BjXuFExgHi7NDWBXsI/edit?usp=sharing)
 
 
 #### All Algorithms
