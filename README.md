@@ -24,50 +24,49 @@ For example, ordering numbers by non-decreasing order, ordering words by lexicog
 
 ## Algorithms
 
-*Assume the strict total order predicate has a time complexity of `O(1)`*
-
-*Let n be the size of the unsorted list*
+*Assume the strict total order predicate has a time complexity of `O(1)`.*<br>
+*Let n be the size of the unsorted list*.
 
 **Bubble Sort**
 
-`O(n^2)` time complexity
+`O(n^2)` time complexity<br>
 Goes through the list swapping adjacent elements which takes `O(n)` time in the worst case if it must swap at every element.
-Goes through the list `n` times in the worst case. 
+Goes through the list `n` times in the worst case. <br>
 Therefore, the algorithm takes `O(n) * n === O(n^2)` time.
 
 **Insertion Sort**
 
-`O(n^2)` time complexity
+`O(n^2)` time complexity<br>
 Inserts a random element into a sorted list that has a size of `n / 2` on average so it takes `O(n / 2)` time.
-There are `n` inserts.
+There are `n` inserts.<br>
 Therefore, the algorithm takes `O(n / 2) * n === O(n^2)` time.
 
 **Selection Sort**
 
-`O(n^2)` time complexity
+`O(n^2)` time complexity<br>
 Goes through the unsorted list to find the smallest element which has a size of `n / 2` on average and it is found half-way on average so it takes `O(n / 4)` time.
-The smallest element is found `n` times and `n` swaps are performed.
+The smallest element is found `n` times and `n` swaps are performed.<br>
 Therefore, the algorithm takes `O(n / 4) * n + n === O(n^2)` time.
 
 **Merge Sort**
 
-`O(nlog(n))` time complexity
+`O(nlog(n))` time complexity<br>
 Merges all adjacent ordered lists which takes `O(n)` time.
-There are `log(n)` merges.
+There are `log(n)` merges.<br>
 Therefore, the algorithm takes `O(n) * log(n) === O(nlog(n))` time.
 
 **Quick Sort**
 
-`O(nlog(n))` time complexity
+`O(nlog(n))` time complexity<br>
 A pivot is picked and all smaller elements are put to the left and all larger elements are put to the right of the pivot.
-There are `log(n)` steps on average.
+There are `log(n)` steps on average.<br>
 Therefore, the algorithm takes `O(n) * log(n) === O(nlog(n))` time.
 
 **Tree Sort**
 
-`O(nlog(n)) time complexity.
+`O(nlog(n)) time complexity.<br>
 An element is picked from the list and inserted into a binary search tree which takes `O(log(n))` time on average.
-There are `n` inserts. Then in order depth first search is used to list the elements of the binary search tree in order which takes `O(n)` time on average.
+There are `n` inserts. Then in order depth first search is used to list the elements of the binary search tree in order which takes `O(n)` time on average.<br>
 Thereforem the algorithm takes `O(log(n)) * n + n === O(nlog(n))` time.
 
 ## Methodology
