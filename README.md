@@ -4,7 +4,7 @@
 
 ## Table of Contents
 1. [Introduction](#introduction)
-2. [Algorithms](#algorithms)
+2. [Algorithms Time Analysis](#algorithms-time-analysis)
 	* [Bubble Sort](#bubble-sort)
 	* [Insertion Sort](#insertion-sort)
 	* [Selection Sort](#selection-sort)
@@ -25,7 +25,7 @@ There are many ways to sort data but I chose 6 common algorithms to compare.
 In all of my algorithms, the user must define the strict total order which means they must define how the data is ordered.
 For example, ordering numbers by non-decreasing order, ordering words by lexicographic order, or ordering dog objects by their age attribute.
 
-## Algorithms
+## Algorithms: Time Analysis
 
 *Assume the strict total order predicate has a time complexity of `O(1)`.*<br>
 *Let n be the size of the unsorted list*.
