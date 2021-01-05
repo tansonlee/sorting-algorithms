@@ -85,7 +85,7 @@ The matplotlib package was used to plot and visualize the data.
 
 #### All Algorithms
 
-<img src="assets/all1.png" width="800px">
+<img src="assets/all2.png" width="800px">
 
 #### Quadratic Time Algorithms
 
