@@ -1,41 +1,49 @@
 import matplotlib.pyplot as plt
-from bubble_sort import bubble_sort
 
 fig = plt.figure()
 ax = fig.add_subplot(111)
 
+plt.xlim([0, 200000])
+plt.ylim([0, 14])
 
-a = [100, 500 ,1000 ,2000 ,4000 ,7000 ,10000 ,12000 ,14000]
-b = [0.002765739 ,0.071294508 ,0.323518605 ,1.266604481 ,5.101739018 ,16.09336063 ,32.73350096 ,46.0904132 ,63.39401424]
+ax.set_title("Sorting Algorithms")
+ax.set_xlabel("Size of List (elements)")
+ax.set_ylabel("Time to Sort (seconds)")
 
-c = [100 , 500 , 1000 , 2000 , 4000 , 7000 , 10000 , 14000 , 16000 , 20000 , 30000 , 50000 , 120000]
+ax.text(16000, 12, "quadratic time", fontsize=8)
+ax.text(140000, 4, "log-linear time", fontsize=8)
 
-d = [0.000262963 ,0.001877218 ,0.004119136 ,0.010091998 ,0.031713743 ,0.040488318 ,0.063451067 ,0.087159459 ,0.10684712 ,0.138434215 ,0.220469253 ,0.376308809 ,0.95804072]
-
-# ax.scatter(bubble_xs, bubble_ys, s=20, c='b', marker="o", label='bubble sort')
-ax.plot(a, b, c='b', label="bubble")
-ax.plot(c, d, c='r', label="quick")
 
 # bubble sort
-bubble_xs = [100, 200, 600, 1000, 2000, 4000]
-bubble_ys = [0.002388906, 0.011671768, 0.103704497, 0.307285144, 1.238294377, 5.050942825]
+bubble_xs = [i for i in range(0, 7001, 1000)]
+bubble_ys = [0, 0.316637417, 1.358731127, 2.918572092, 5.135054007, 7.916411395, 11.24790769, 15.3819458]
+ax.plot(bubble_xs, bubble_ys, c='tab:orange', label="bubble sort")
 
-bubble_fit_xs = [x for x in range(0, 5000, 100)]
-bubble_fit_ys = [(0.0000003212 * x * x) - (0.00002308 * x) + 0.00323 for x in bubble_fit_xs]
-
-# ax.scatter(bubble_xs, bubble_ys, s=20, c='b', marker="o", label='bubble sort')
-# ax.plot(bubble_fit_xs, bubble_fit_ys, c='b')
+# selection sort
+selection_xs = [i for i in range(0, 12001, 1000)]
+selection_ys = [0, 0.099181189, 0.40178215, 0.920364322, 1.671383512, 2.589804009, 3.675705712, 5.028809265, 6.432947223, 8.163354792, 10.09395525, 12.36817226, 14.68760056]
+ax.plot(selection_xs, selection_ys, c='darkviolet', label="selection sort")
 
 # insertion sort
-insertion_xs = [100, 200, 600, 1000, 2000, 4000]
-insertion_ys = [0.000617657, 0.002079222, 0.022328386, 0.069712827, 0.283719646, 1.096839277]
+insertion_xs = [i for i in range(0, 15001, 1000)]
+insertion_ys = [0, 0.064237171, 0.261664558, 0.605969898, 1.091974283, 1.700302461, 2.473288389, 3.347905331, 4.393138773, 5.546518625, 6.925221136, 8.335693843, 9.947850786, 11.70808336, 14.07337099, 15.84565998]
+ax.plot(insertion_xs, insertion_ys, c='tab:cyan', label="insertion sort")
 
-insertion_fit_xs = [x for x in range(0, 5000, 100)]
-insertion_fit_ys = [(0.00000006662 * x * x) + (0.000008673 * x) - 0.003274 for x in insertion_fit_xs]
+# tree sort
+tree_xs = [i for i in range(0, 200001, 10000)]
+tree_ys = [0, 0.11779917, 0.320486946, 0.51255483, 0.70029946, 0.888280582, 1.21822254, 1.365938609, 1.610196918, 1.710637391, 1.934100108, 2.259315929, 2.31000399, 2.460601145, 2.601133243, 2.938564463, 3.088515384, 3.34250221, 3.632307243, 3.808117787, 4.015129969]
+ax.plot(tree_xs, tree_ys, c='tab:blue', label="tree sort")
 
-# ax.scatter(insertion_xs, insertion_ys, s=20, c='r', marker="o", label='insertion sort')
-# ax.plot(insertion_fit_xs, insertion_fit_ys, c='r')
+# merge sort
+merge_xs = [i for i in range(0, 200001, 10000)]
+merge_ys = [0, 0.080031629, 0.178079152, 0.28397666, 0.369154724, 0.467649408, 0.569375168, 0.690644186, 0.80393847, 0.898687919, 1.000035167, 1.113879932, 1.22577674, 1.329018527, 1.460036092, 1.570010371, 1.67354859, 1.800667858, 1.902015928, 2.023224376, 2.133587994]
+ax.plot(merge_xs, merge_ys, c='tab:red', label="merge sort")
+
+# quick sort
+quick_xs = [i for i in range(0, 200001, 10000)]
+quick_ys = [0, 0.059505538, 0.130772246, 0.204778384, 0.274155564, 0.351184084, 0.427069875, 0.514651964, 0.608474146, 0.691340908, 0.766249699, 0.91936481, 1.02935181, 1.135905274, 1.1894149, 1.236783196, 1.286408225, 1.374805473, 1.457546934, 1.567019841, 1.657306287]
+ax.plot(quick_xs, quick_ys, c='tab:green', label="quick sort")
 
 
-plt.legend(loc='upper left');
+plt.legend(loc='upper right');
 plt.show()
