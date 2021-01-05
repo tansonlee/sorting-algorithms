@@ -10,8 +10,8 @@ ax.set_title("Sorting Algorithms", fontsize=20)
 ax.set_xlabel("Size of List (elements)", fontsize=16)
 ax.set_ylabel("Time to Sort (seconds)", fontsize=16)
 
-plt.xticks(fontsize=12)
-plt.yticks(fontsize=12)
+plt.xticks(fontsize=14)
+plt.yticks(fontsize=14)
 
 ax.text(16000, 12, "quadratic time", fontsize=14)
 ax.text(140000, 4, "log-linear time", fontsize=14)
