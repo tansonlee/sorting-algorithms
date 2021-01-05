@@ -48,5 +48,5 @@ quick_ys = [0, 0.059505538, 0.130772246, 0.204778384, 0.274155564, 0.351184084, 
 ax.plot(quick_xs, quick_ys, c='tab:green', label="quick sort")
 
 
-plt.legend(loc='upper right', prop={'size': 10});
+plt.legend(loc='upper right', prop={'size': 14});
 plt.show()
