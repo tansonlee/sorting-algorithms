@@ -82,15 +82,15 @@ The matplotlib package was used to plot and visualize the data.
 
 #### All Algorithms
 
-<img src="assets/all.png" width="600px">
+<img src="assets/all.png" width="800px">
 
 #### Quadratic Time Algorithms
 
-<img src="assets/quadratic.png" width="600px">
+<img src="assets/quadratic.png" width="800px">
 
 #### Log-Linear Time Algorithms
 
-<img src="assets/loglinear.png" width="600px">
+<img src="assets/loglinear.png" width="800px">
 
 
 ## Future Considerations
