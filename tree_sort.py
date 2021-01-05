@@ -39,10 +39,9 @@ class Node:
 def tree_sort(lst, to_strict):
 	if len(lst) == 0:
 		return lst
-	shuffle(lst)
 	root = Node(lst[0], to_strict)
 	for i in range(1, len(lst)):
 		root.insert(lst[i])
 	
 	return root.list_elements()
-	
+

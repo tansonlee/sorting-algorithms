@@ -17,6 +17,9 @@
 	* [Quadratic Time Algorithms](#quadratic-time-algorithms)
 	* [Log-Linear Time Algorithms](#log-linear-time-algorithms)
 5. [Future Considerations](#future-considerations)
+6. [Sorting Examples](#sorting-examples)
+	* [Non-decreasing Order](#non-decreasing-order)
+	* [People by Age](#people-by-age)
 
 ## Introduction
 
@@ -24,6 +27,7 @@ A sorting algorithm is an algorithm that can sort some data in order for some de
 There are many ways to sort data but I chose 6 common algorithms to compare.
 In all of my algorithms, the user must define the strict total order which means they must define how the data is ordered.
 For example, ordering numbers by non-decreasing order, ordering words by lexicographic order, or ordering dog objects by their age attribute.
+Examples of how to use the sorting algorithms can be found here: [Sorting Examples](#sorting-examples)
 
 ## Algorithms: Time Analysis
 
@@ -100,3 +104,57 @@ The matplotlib package was used to plot and visualize the data.
 
 1. Compare the speeds of these algorithms with a randomly sorted list, already sorted list, and reverse sorted list.
 2. Compare non-comparison sorts
+
+## Sorting examples
+
+#### Non-decreasing Order
+
+Sorting natural numbers in non-decreasing order using tree sort.
+
+```python
+from tree_sort import tree_sort
+
+lst = [1, 9, 8, 4, 6]
+strict_total_order = lambda x, y : x < y  # this specifies non-decreasing order
+
+sorted_lst = tree_sort(lst, strict_total_order)
+
+print(sorted_lst)
+# prints [1, 4, 6, 8, 9]
+```
+
+#### People by Age
+
+Sorting people by their age then their name alphabetically if they have the same age using tree-sort.
+
+```python
+from tree_sort import tree_sort
+
+class Person:
+	def __init__(self, name, age):
+		self.name = name
+		self.age = age
+
+person1 = Person("Laura", 18)
+person2 = Person("James", 22)
+person3 = Person("Sam", 12)
+person4 = Person("Anthony", 18)
+
+people = [person1, person2, person3, person4]
+
+def strict_total_order(person1, person2):
+	if person1.age != person2.age:
+		return person1.age < person2.age
+	elif person1.name.lower() != person2.name:
+		return sorted([person1.name.lower(), person2.name.lower()])[0] == person1.name.lower()
+	else: #names and age are equal
+		return False
+
+sorted_people = tree_sort(people, strict_total_order)
+
+for person in sorted_people:
+	print(person.name, end=" ")
+
+# prints Sam Anthony Laura James
+
+```
