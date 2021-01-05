@@ -64,7 +64,7 @@ Therefore, the algorithm takes `O(n) * log(n) === O(nlog(n))` time.
 
 **Tree Sort**
 
-`O(nlog(n)) time complexity.<br>
+`O(nlog(n))` time complexity.<br>
 An element is picked from the list and inserted into a binary search tree which takes `O(log(n))` time on average.
 There are `n` inserts. Then in order depth first search is used to list the elements of the binary search tree in order which takes `O(n)` time on average.<br>
 Thereforem the algorithm takes `O(log(n)) * n + n === O(nlog(n))` time.
