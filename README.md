@@ -13,6 +13,9 @@
 	* [Tree Sort](#tree-sort)
 3. [Methodology](#methodology)
 4. [Results](#results)
+	* [All Algorithms](#all-algorithms)
+	* [Quadratic Time Algorithms](#quadratic-time-algorithms)
+	* [Log-Linear Time Algorithms](#log-linear-time-algorithms)
 5. [Future Considerations](#future-considerations)
 
 ## Introduction
