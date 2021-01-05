@@ -7,10 +7,12 @@ ax = fig.add_subplot(111)
 plt.xlim([0, 19000])
 plt.ylim([0, 20])
 
-ax.set_title("Quadratic Time Sorting Algorithms")
-ax.set_xlabel("Size of List (elements)")
-ax.set_ylabel("Time to Sort (seconds)")
+ax.set_title("Quadratic Time Sorting Algorithms", fontsize=20)
+ax.set_xlabel("Size of List (elements)", fontsize=16)
+ax.set_ylabel("Time to Sort (seconds)", fontsize=16)
 
+plt.xticks(fontsize=14)
+plt.yticks(fontsize=14)
 
 # bubble sort
 bubble_xs = [i for i in range(0, 8001, 1000)]
@@ -27,5 +29,5 @@ insertion_xs = [i for i in range(0, 17001, 1000)]
 insertion_ys = [0, 0.065403942, 0.266629282, 0.61332097, 1.10324347, 1.757205955, 2.397509865, 3.39461072, 4.449606701, 5.598851141, 6.923869, 8.333155321, 9.990748035, 11.62466114, 13.71631807, 15.58797276, 17.96887404, 20.47389299]
 ax.plot(insertion_xs, insertion_ys, c='tab:cyan', label="insertion sort")
 
-plt.legend(loc='upper left');
+plt.legend(loc='upper left', prop={'size': 14});
 plt.show()

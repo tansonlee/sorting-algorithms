@@ -4,9 +4,12 @@ from bubble_sort import bubble_sort
 fig = plt.figure()
 ax = fig.add_subplot(111)
 
-ax.set_title("Log-Linear Sorting Algorithms")
-ax.set_xlabel("Size of List (millions)")
-ax.set_ylabel("Time to Sort (seconds)")
+ax.set_title("Log-Linear Sorting Algorithms", fontsize=20)
+ax.set_xlabel("Size of List (millions)", fontsize=16)
+ax.set_ylabel("Time to Sort (seconds)", fontsize=16)
+
+plt.xticks(fontsize=14)
+plt.yticks(fontsize=14)
 
 plt.xlim([0, 1_200_000])
 plt.ylim([0, 30])
@@ -27,5 +30,5 @@ quick_ys = [0, 0.763579506, 1.65103401, 2.612733445, 3.510366021, 4.539139283, 5
 ax.plot(quick_xs, quick_ys, c='tab:green', label="quick sort")
 
 
-plt.legend(loc='upper left');
+plt.legend(loc='upper left', prop={"size": 14});
 plt.show()
