@@ -2,6 +2,8 @@
 
 ### An Implementation and Analysis of 6 Comparison Sorting Algorithms
 
+You can use the implemetations of the sorting algorithms online using repl.it here: [Sorting Algorithms](https://repl.it/@TansonL/sorting-algorithms)
+
 ## Table of Contents
 1. [Introduction](#introduction)
 2. [Algorithms Time Analysis](#algorithms-time-analysis)
@@ -20,6 +22,7 @@
 6. [Sorting Examples](#sorting-examples)
 	* [Non-decreasing Order](#non-decreasing-order)
 	* [People by Age](#people-by-age)
+7. [How to Use](#how-to-use)
 
 ## Introduction
 
@@ -161,3 +164,11 @@ for person in sorted_people:
 # prints Sam Anthony Laura James
 
 ```
+
+## How to Use
+
+1. Access an online version of this project at: [Sorting Algorithms](https://repl.it/@TansonL/sorting-algorithms)
+
+2. Change the main.py file to your program.
+
+3. Run the program by clicking the green Run button
