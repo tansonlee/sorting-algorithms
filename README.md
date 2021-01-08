@@ -2,7 +2,8 @@
 
 ### An Implementation and Analysis of 6 Comparison Sorting Algorithms
 
-You can use the implemetations of the sorting algorithms online using repl.it here: [Sorting Algorithms](https://repl.it/@TansonL/sorting-algorithms)
+You can use the implemetations of the sorting algorithms online using repl.it here: [Sorting Algorithms](https://repl.it/@TansonL/sorting-algorithms)<br>
+Raw data can be viewed here: [Sorting Algorithm Data](https://docs.google.com/spreadsheets/d/1_P_d599SQPivhfgRHGJy047k4BjXuFExgHi7NDWBXsI/edit?usp=sharing)
 
 ## Table of Contents
 1. [Introduction](#introduction)
