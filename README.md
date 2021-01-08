@@ -170,6 +170,6 @@ for person in sorted_people:
 
 1. Access an online version of this project at: [Sorting Algorithms](https://repl.it/@TansonL/sorting-algorithms)
 
-2. Change the main.py file to your program.
+2. Change the main.py file to your program. You may need to create an account to modify the code.
 
 3. Run the program by clicking the green Run button
